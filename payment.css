@@ -1,0 +1,249 @@
+body {
+  background-color: #FDFBEE;
+}
+
+/*...........................Navigation bar complete styling here............................*/
+nav {
+  background: #ffffff;
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #000;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(86, 84, 84);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+a.active, a:hover {
+  background: #212529;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 70%;
+    height: 722px;
+    background: #212529;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .navbar nav ul li {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #fff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+  }
+}
+/*...........................Complete end of Navigation bar styling............................*/
+.animnav {
+  margin-top: 30px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 100px;
+}
+
+.flex-grid {
+  color: rgb(0, 0, 0);
+  display: flex;
+  margin: auto -1rem 1rem;
+}
+
+.col {
+  background-color: rgb(255, 255, 255);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px #cbcaca;
+}
+
+.sidebar {
+  flex: 3;
+}
+
+.main {
+  flex: 1;
+}
+
+.imgrhs {
+  flex: 1;
+  padding: 5px 5px 5px 25px;
+}
+
+.prhs {
+  flex: 4;
+  padding: 15px 15px 15px 15px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inp {
+  background-color: #cbcaca;
+}
+
+.list2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fslhs {
+  display: flex;
+  flex-direction: column;
+}
+
+.addpart {
+  background-color: #fff;
+}
+
+.adpart2 {
+  border: 1px solid rgb(179, 170, 170);
+  max-width: 400px;
+  border-radius: 3px;
+  padding: 20px 20px 20px 20px;
+}
+
+.button {
+  background-color: #ABD0D0; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.adpart3 {
+  border: 1px solid rgb(179, 170, 170);
+  max-width: 400px;
+  border-radius: 3px;
+  padding: 20px 20px 20px 20px;
+}
+
+/* .adpart3 hr{
+  margin-top: 60px;
+  border-top: 1px solid #c9c7c7;
+  width:100%;
+  margin: 0 -15px;
+border: 0;
+border-top: 1px solid #c9c7c7;
+} */
+.split {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -20px 0 -20px;
+  padding: 0;
+  border: 1px solid rgb(116, 114, 114);
+  justify-content: space-between;
+}
+
+.internals2 {
+  padding-right: 150px;
+}
+
+.internals1 {
+  padding-left: 20px;
+}
+
+.twothings {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 15px 15px 15px;
+  justify-content: space-between;
+  max-width: 350px;
+} /*# sourceMappingURL=payment.css.map *//*# sourceMappingURL=payment.css.map */

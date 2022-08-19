@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment gateway page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+    <!--............................ Start of our Navbar................................-->
+
+<div style="font-family: 'Lora', serif ;" class="navbar">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <div class="animnav" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+      </label>
+      <ul class="navul">
+        <li><img height="25px" style="margin-bottom: -8px; margin-left:-950px;" src="../assets/logo.PNG"></li>
+        <li><b><span  style="text-decoration: underline; margin-left:-900px;">Mumbai</span></b> &nbsp; Maharashtra, India
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </li>
+        <li><a href="#service"><i class="fa fa-list-ul" aria-hidden="true"></i>
+    Search</a></li>
+        <li><a href="#timeline"><i class="fa fa-clock-o" aria-hidden="true"></i>
+    Help   </a></li>
+        <li><a href="#testimonis"><i class="fa fa-users" aria-hidden="true"></i>
+    User</a></li>
+        <li><a href="#contact"><i class="fa fa-phone" aria-hidden="true"></i>
+    Cart</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="container">
+        <div class="flex-grid">
+          <aside class="sidebar">
+            <div class="col">
+              <h3  style="color: rgb(91, 91, 91);">Select Address</h3>
+              <div class="adpart2">
+                <h3><b>Home</b></h3>
+                <p style="color: rgb(128, 127, 127);">12/b8, SV Road</p>
+                <p style="color: rgb(128, 127, 127);">Malad West, Mumbai, 400404</p>
+                <button class="button">DELIVER HERE</button>
+              </div>
+            </div>
+            <br>  
+            <h3 style="color: rgb(74, 72, 72); padding-left:50px; font-weight:light;">Payment</h3>
+            <div class="col adpart3">
+              <div><p style="color: rgb(128, 127, 127);">Card Numbers</p></div>
+              <div class="split">
+                <div class="internals1"><p style="color: rgb(128, 127, 127);">Valid Through (MM/YY)</p></div>
+                
+                <div class="internals2"><p style="color: rgb(128, 127, 127);">CVV</p></div>
+              </div>
+              <div><p style="color: rgb(128, 127, 127);">Name on Card</p></div>
+            </div>
+            <div class="twothings">
+              <button class="button">Pay Rs.500</button>
+              <img src="pays.Png">
+            </div>
+          </aside>
+          <section class="col main">
+            <div class="flex-grid">
+              <img class="imgrhs" src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=50">
+              <p class="prhs"><b>FARM FRESH STORE</b></p>
+            </div>
+            <hr>
+            <ul>
+              <li class="list">
+                <div>Tomatoes</div>
+                <div class="inp">&nbsp;- 1 +&nbsp;</div>
+                <div>₹200</div>
+              </li>
+              <br>
+              <li class="list">
+                <div>Carrot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="inp"> &nbsp;- 2 +&nbsp;</div>
+                <div>₹150</div>
+              </li>
+              <br>
+              <li class="list">
+                <div>Cabbage&nbsp;</div>
+                <div class="inp">&nbsp;- 1 +&nbsp;</div>
+                <div>₹100</div>
+              </li>
+            </ul>
+            <br><br>
+            <p style="padding-left: 20px;"><b>Bill Details</b><p>
+              <ul>
+                <li class="list2">
+                  <div>Item Total</div>
+                  <div>₹200</div>
+                </li>
+                <br>
+                <li class="list2">
+                  <div>Delivery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                  <div>₹150</div>
+                </li>
+                </ul>
+                <br><br>
+                <hr>
+                <ul>
+                  <li class="list2">
+                    <div><b>TO PAY</b></div>
+                    <div>₹500</div>
+                  </li>
+                  </ul>
+          </section>
+        </div>
+      </div>
+    <!--.............................End of the navigation Section....................................-->
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>
+</body>
+</html>

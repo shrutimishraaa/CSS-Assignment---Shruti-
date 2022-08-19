@@ -1,0 +1,24 @@
+.dot{
+    position:absolute;
+    top:0;
+    left:0;
+    width:80px;
+    height:80px;
+    background:rgb(226, 219, 226);
+    border-radius:50%;
+}
+.sun{
+    width:400px;
+    height:400px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    top:50px;
+    left:50px;
+}
+
+@-webkit-keyframes orbit { 
+from { -webkit-transform:rotate(0deg) } 
+to { -webkit-transform:rotate(360deg) } }
